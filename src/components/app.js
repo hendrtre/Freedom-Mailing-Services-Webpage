@@ -22,6 +22,11 @@ export default class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route path="/specialized-customizations" component={SpecializedCustomizations} />
             <Route path="/other-offers" component={OtherOffers} />
+            {/* <Route
+                exact
+                path="/portfolio/:slug"
+                component={PortfolioDetail}
+              /> */}
             <Route component={NoMatch} />
           </Switch>
           </div>
