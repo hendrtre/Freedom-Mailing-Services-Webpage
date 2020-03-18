@@ -7,6 +7,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import SpecializedCustomizations from "./pages/specialized-customizations";
 import OtherOffers from "./pages/other-offers";
+import NoMatch from "./pages/no-match";
 
 export default class App extends Component {
   render() {
@@ -18,9 +19,10 @@ export default class App extends Component {
           <NavigationComponent />
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/contact" component={Contact} />
-            <Route exact path="/specialized-customizations" component={SpecializedCustomizations} />
-            <Route exact path="/other-offers" component={OtherOffers} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/specialized-customizations" component={SpecializedCustomizations} />
+            <Route path="/other-offers" component={OtherOffers} />
+            <Route component={NoMatch} />
           </Switch>
           </div>
         </Router>
