@@ -28,12 +28,12 @@ export default class App extends Component {
               fontSize: "55px",
               // width: "",
               height: "90px",
-              backgroundPosition: "center"
+              backgroundPosition: "center",
+              opacity: "0.25"
             }}
           >
             Freedom Mailing Services
           </div>
-          <div>Welcome to Freedom Mailing Services!</div>
           <NavigationComponent />
           <Switch>
             <Route exact path="/" component={Home} />

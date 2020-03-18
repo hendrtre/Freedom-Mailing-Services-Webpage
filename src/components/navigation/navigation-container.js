@@ -4,8 +4,8 @@ import { NavLink } from 'react-router-dom'
 const NavigationComponent = (props) => {
     return (
         <div className="Navigation-wrapper">
-            <div className="navigation-link">
-                <NavLink exact to="/">
+            <div className="nav-link-wrapper">
+                <NavLink exact to="/" activeClassName="nav-link-active">
                     Home
                 </NavLink>
             </div>
