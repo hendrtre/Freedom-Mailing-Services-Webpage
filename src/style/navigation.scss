@@ -1,4 +1,5 @@
-// TODO I would suggest touching up on this. 
+// TODO figure a way to make the logo look like a postal stamp
+// figure a way to make the logo apear to on the navbar instead of in it.
 
 .Navigation-wrapper {
     display: flex;
@@ -8,6 +9,11 @@
     // padding-right: 50px;
     // background-color: $maroon;
     background-color: #530000;
+
+    .right-side {
+        display: flex;
+        align-items: center;
+    }
 
     .nav-link-wrapper {
         display: flex;
