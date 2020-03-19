@@ -10,11 +10,6 @@ const NavigationComponent = (props) => {
                 </NavLink>
             </div>
             <div className="nav-link-wrapper">
-                <NavLink to="/contact" activeClassName="nav-link-active">
-                    Contact
-                </NavLink>
-            </div>
-            <div className="nav-link-wrapper">
                 <NavLink to="/specialized-customizations" activeClassName="nav-link-active">
                     Specialized Customizations 
                 </NavLink>
@@ -22,6 +17,11 @@ const NavigationComponent = (props) => {
             <div className="nav-link-wrapper">
                 <NavLink to="/other-offers" activeClassName="nav-link-active">
                     Other Offers
+                </NavLink>
+            </div>
+            <div className="nav-link-wrapper">
+                <NavLink to="/contact" activeClassName="nav-link-active">
+                    Contact
                 </NavLink>
             </div>
         </div>
