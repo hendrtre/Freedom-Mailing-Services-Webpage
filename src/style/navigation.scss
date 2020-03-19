@@ -1,18 +1,46 @@
 // TODO figure a way to make the logo look like a postal stamp
 // figure a way to make the logo apear to on the navbar instead of in it.
 
+.logo-position {
+    
+	width: 180px;
+	height: 140px;
+	display: inline-block;
+	padding: 10px;
+	background: white;
+	position: relative;
+	filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+	/*The stamp cutout will be created using crisp radial gradients*/
+	background: radial-gradient(
+		transparent 0px, 
+		transparent 4px, 
+		white 4px,
+		white
+	);
+  
+	/*reducing the gradient size*/
+	background-size: 20px 20px;
+	/*Offset to move the holes to the edge*/
+	background-position: -10px -10px;
+}
+
+
 .Navigation-wrapper {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    // padding-left: 50px;
-    // padding-right: 50px;
     // background-color: $maroon;
     background-color: #530000;
+    margin-bottom: 40px;
 
     .right-side {
         display: flex;
         align-items: center;
+    }
+    
+    .left-side {
+        display: flex;
+        height: 25px;
     }
 
     .nav-link-wrapper {

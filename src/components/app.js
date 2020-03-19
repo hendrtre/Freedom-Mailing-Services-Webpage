@@ -9,7 +9,7 @@ import SpecializedCustomizations from "./pages/specialized-customizations";
 import OtherOffers from "./pages/other-offers";
 import NoMatch from "./pages/no-match";
 
-import theBaldEagle from "../../static/assets/bald-eagle/Bald-Eagle.jpg"
+import theBaldEagle from "../../static/assets/main-imgs/Bald-Eagle.jpg"
 
 export default class App extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class App extends Component {
                 fontFamily: "Dancing Script, cursive",
                 fontSize: "55px",
               }}
-            >
+              >
               <div 
                 className="nav-img" 
                 style={{
