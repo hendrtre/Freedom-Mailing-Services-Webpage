@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import React, { Component } from 'react';
 
-
 import NavigationComponent from "./navigation/navigation-container";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
@@ -12,7 +11,7 @@ import NoMatch from "./pages/no-match";
 import theBaldEagle from "../../static/assets/main-imgs/Bald-Eagle.jpg"
 
 export default class App extends Component {
-  render() {
+  render() {    
     return (
       <div className='app'>
         <Router>
