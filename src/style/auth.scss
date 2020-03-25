@@ -1,0 +1,32 @@
+// .auth-page-wrapper {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     height: 100vh;
+
+//     .left-column {
+//         background-size: cover;
+//         // padding-left: 10rem;
+//     }
+
+//     .right-column {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         background-color: $offwhite;
+//         // background-color: #F3F1F1;
+//     }
+// }
+
+// SEE IF IT IS POSSIBLE TO SHRINK THE DISNEY IMAGE IF POSSIBLE
+
+.auth-page-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $offwhite;
+    }
+}

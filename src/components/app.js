@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Contact from "./pages/contact";
 import SpecializedCustomizations from "./pages/specialized-customizations";
 import OtherOffers from "./pages/other-offers";
+import Auth from "./pages/auth"
 import NoMatch from "./pages/no-match";
 
 import theBaldEagle from "../../static/assets/main-imgs/Bald-Eagle.jpg"
@@ -53,6 +54,7 @@ export default class App extends Component {
             <NavigationComponent />
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/auth" component={Auth} />
               <Route path="/contact" component={Contact} />
               <Route path="/specialized-customizations" component={SpecializedCustomizations} />
               <Route path="/other-offers" component={OtherOffers} />
