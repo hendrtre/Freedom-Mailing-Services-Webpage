@@ -50,9 +50,9 @@ export default class Home extends Component {
     return (
       <div className="content-page-wrapper">
         <h1>I am the Home Page</h1>
-        <h2>
+        <div className="contents">
           {this.paragraphs()}
-        </h2>
+        </div>
       </div>
     );
   }

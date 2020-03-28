@@ -1,0 +1,16 @@
+.contact-page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 12fr;
+
+    .maroon-ribbon {
+        background-color: $maroon;
+        height: 500px;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $offwhite;
+    }
+}
