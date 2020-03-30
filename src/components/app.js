@@ -12,6 +12,29 @@ import NoMatch from "./pages/no-match";
 import theBaldEagle from "../../static/assets/main-imgs/Bald-Eagle.jpg"
 
 export default class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      loggedInStatus: "NOT_LOGGED_IN"
+    }
+
+    this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this)
+    this.handleUnsuccessfulLogin = this.handleUnsuccessfulLogin.bind(this)
+  }
+
+  handleSuccessfulLogin() {
+    this.setState({
+      loggedInStatus: "LOGGED_IN"
+    })
+  }
+
+  handleUnsuccessfulLogin() {
+    this.setState({
+      loggedInStatus: "NOT_LOGGED_IN"
+    })
+  }
+
   render() {    
     return (
       <div className='app'>
@@ -52,17 +75,28 @@ export default class App extends Component {
             </div>
             
             <NavigationComponent />
+
+            <h1>{this.state.loggedInStatus}</h1>
+
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/auth" component={Auth} />
+
+              <Route 
+                path="/auth" 
+                // component={Auth} 
+                render={props => (
+                  <Auth 
+                    {...props}
+                    handleSuccessfulLogin={this.handleSuccessfulLogin}
+                    handleUnsuccessfulLogin={this.handleUnsuccessfulLogin}
+                  />
+                )}
+              />
+
               <Route path="/contact" component={Contact} />
               <Route path="/specialized-customizations" component={SpecializedCustomizations} />
               <Route path="/other-offers" component={OtherOffers} />
-              {/* <Route
-                  exact
-                  path="/portfolio/:slug"
-                  component={PortfolioDetail}
-                /> */}
+
               <Route component={NoMatch} />
             </Switch>
           </div>

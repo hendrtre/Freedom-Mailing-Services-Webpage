@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import axios from "axios"
 
-export default class login extends Component {
+export default class Login extends Component {
     constructor(props) {
         super(props)
 
         this.state = {
             email: "",
-            password: ""
+            password: "",
+            errorText: ""
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -16,7 +17,8 @@ export default class login extends Component {
 
     handleChange(event) {
         this.setState({
-            [event.target.name]: event.target.value
+            [event.target.name]: event.target.value,
+            errorText: ""
         })
     }
 
@@ -29,8 +31,22 @@ export default class login extends Component {
                 password: this.state.password
             }
       ).then(response => {
-        console.log("response", response);
-      });
+          if (response.data === "Password Authenticated") {
+              this.props.handleSuccessfulAuth()
+          } else {
+              this.setState({
+                  errorText: "Wrong email or password"
+              })
+              this.props.handleUnsuccessfulAuth()
+          }
+          console.log("response", response);
+      }).catch(error => {
+          console.log("some error occured", error)
+          this.setState({
+              errorText: "ERROR, Unable to connect with Database"
+          })
+          this.props.handleUnsuccessfulAuth()
+      })
 
     event.preventDefault()
     }
@@ -39,6 +55,8 @@ export default class login extends Component {
         return (
             <div>
                 <h1>LOGIN TO ACCESS YOUR DASHBOARD</h1>
+
+                <div>{this.state.errorText}</div>
 
                 <form onSubmit={this.handleSubmit}>
                     <input 
