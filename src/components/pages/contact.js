@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+// TODO MAKE ICONS NEXT TO PHONE AND ADDRESS
+
 export default class Contact extends Component {
   render() {
     return (
@@ -8,7 +10,11 @@ export default class Contact extends Component {
         <div className="maroon-ribbon"></div>
 
         <div className="right-side">
-          <h1>For further information or questions, contact us at:</h1>
+          <div className="contact-context">For further information or questions, contact us at:</div>
+          <div className="phone-address">
+            <div className="phone">(801) 373-2131</div>
+            <div className="address">459 W Center St. Orem, Utah 84057</div>
+          </div>
 
           <div className="form-container">
             <form action="" className="form">
