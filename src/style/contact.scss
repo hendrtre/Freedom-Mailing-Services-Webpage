@@ -12,5 +12,39 @@
         justify-content: center;
         align-items: center;
         background-color: $offwhite;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .name-email-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-group-fullName {
+        margin-right: 120px;
+    }
+
+    .form input {
+        font-size: 1.3rem;
+        font-family: inherit;
+        padding: 1.25rem 2rem;
+        border-radius: 2px;
+        border: none;
+        border-bottom: 3px solid #00004a;
+        width: 100%;
+        display: block;
+        transition: all;
+    }
+
+    .form textarea {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 3px;
+        border: 3px solid #00004a;
+        font-size: 1.3rem;
+        font-family: inherit;
+        padding: 1.25rem 2rem;
+        transition: all 0.3s;
     }
 }
