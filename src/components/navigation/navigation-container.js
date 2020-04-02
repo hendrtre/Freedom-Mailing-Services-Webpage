@@ -1,6 +1,5 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-// import BlackLogo from '../../../static/assets/main-imgs/BlackLogo.jpg'
 import FMSLogo from '../../../static/assets/main-imgs/FMS-logo-w-words-2.jpg'
 
 const NavigationComponent = (props) => {

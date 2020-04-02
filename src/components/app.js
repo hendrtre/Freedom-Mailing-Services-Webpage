@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import React, { Component } from 'react';
+import axios from 'axios'
 
 import NavigationComponent from "./navigation/navigation-container";
 import Home from "./pages/home";
@@ -46,7 +47,6 @@ export default class App extends Component {
                 position: "relative",
                 textAlign: "center",
                 color: "#530000",
-                // color: "$maroon",
                 fontFamily: "Dancing Script, cursive",
                 fontSize: "55px",
               }}
