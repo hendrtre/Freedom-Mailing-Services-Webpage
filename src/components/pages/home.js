@@ -19,7 +19,9 @@ export default class Home extends Component {
 
   getParagraphs() {
     axios
-      .get("http://localhost:5000/paragraphs")
+      // .get("http://localhost:5000/paragraphs")
+      // .get("https://fms-test-tah.herokuapp.com/paragraphs")
+      .get("https://fms-test-tah.herokuapp.com/paragraphs")
       .then(response => {
         this.setState({
           data: response.data
