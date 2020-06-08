@@ -1,0 +1,15 @@
+.home-content-page-wrapper {
+    display: flex;
+    margin-top: 40px;
+
+    .blank {
+        width: 90px;
+        // color: white;
+    }
+
+    .ribbon {
+        background-color: $maroon;
+        color: white;
+        width: 120px;
+    }
+}

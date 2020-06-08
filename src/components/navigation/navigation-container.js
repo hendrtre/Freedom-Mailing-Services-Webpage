@@ -10,7 +10,7 @@ const NavigationComponent = (props) => {
                 style={{
                     position: "absolute",
                     left: "50px",
-                    top: "65px"
+                    top: "113px"
                 }}
             >
                 <img 
@@ -37,12 +37,14 @@ const NavigationComponent = (props) => {
                     </div>
                     <div className="nav-link-wrapper">
                         <NavLink to="/specialized-customizations" activeClassName="nav-link-active">
-                            Specialized Customizations 
+                            <div className="special">
+                                Specialized Customizations 
+                            </div>
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">
                         <NavLink to="/other-offers" activeClassName="nav-link-active">
-                            Other Offers
+                            Additional Offers
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">

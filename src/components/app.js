@@ -48,7 +48,8 @@ export default class App extends Component {
                 textAlign: "center",
                 color: "#530000",
                 fontFamily: "Dancing Script, cursive",
-                fontSize: "55px",
+                fontSize: "80px",
+                fontWeight: "bold",
               }}
               >
               <div 
@@ -57,7 +58,7 @@ export default class App extends Component {
                   display: "flex",
                   justifyContent: "center",
                   background: "url(" + theBaldEagle + ") no-repeat",                                  
-                  height: "100px",
+                  height: "140px",
                   backgroundPosition: "50% 30%",
                   backgroundSize: "cover",
                   opacity: "0.25"
@@ -69,7 +70,8 @@ export default class App extends Component {
                   position: "absolute",
                   top: "50%",
                   left: "50%",
-                  transform: "translate(-50%, -50%)"
+                  transform: "translate(-50%, -50%)",
+                  width: "10em"
                 }}
               >Freedom Mailing Services</div>
             </div>
@@ -83,7 +85,7 @@ export default class App extends Component {
 
               <Route 
                 path="/auth" 
-                // component={Auth} 
+                component={Auth} 
                 render={props => (
                   <Auth 
                     {...props}
