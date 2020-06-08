@@ -24,7 +24,9 @@ export default class Items extends Component {
   handlePatchParagraphs(event) {
     event.preventDefault()    
     console.log(this)
-    axios.patch("http://localhost:5000/paragraph/${1}", {
+    // axios.patch("http://localhost:5000/paragraph/${1}", {
+    // axios.patch("https://fms-test-tah.herokuapp.com/paragraph/${1}", {
+    axios.patch("https://fms-test-tah.herokuapp.com/paragraph/${1}", {
       content: this.props.content
     }).then((response) => {
       console.log(response)
