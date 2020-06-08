@@ -76,7 +76,7 @@ export default class App extends Component {
             
             <NavigationComponent />
 
-            <h1>{this.state.loggedInStatus}</h1>
+            {/* <h1>{this.state.loggedInStatus}</h1> */}
 
             <Switch>
               <Route exact path="/" component={Home} />
