@@ -2,14 +2,29 @@
     display: flex;
     margin-top: 40px;
 
+    img {
+        width: 150px;
+    }
+
     .blank {
-        width: 90px;
-        // color: white;
+        width: 104px;
+        color: white;
+        border-right: solid 9px blue;
     }
 
     .ribbon {
+        text-align: center;
         background-color: $maroon;
         color: white;
-        width: 120px;
+        width: 125px;
+        border-left: solid 4px white;
+        padding: 6px;
+    }
+
+    .home-page {
+        // text-indent: 3em;
+        // text-align: center;
+        padding: 3em;
+        width: fit-content;
     }
 }
