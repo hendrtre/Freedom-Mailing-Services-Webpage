@@ -44,7 +44,7 @@ const NavigationComponent = (props) => {
                     </div>
                     <div className="nav-link-wrapper">
                         <NavLink to="/other-offers" activeClassName="nav-link-active">
-                            Additional Offers
+                            Additional Services
                         </NavLink>
                     </div>
                     <div className="nav-link-wrapper">

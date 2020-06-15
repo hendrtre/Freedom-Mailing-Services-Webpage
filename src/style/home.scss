@@ -1,30 +1,92 @@
 .home-content-page-wrapper {
     display: flex;
-    margin-top: 40px;
+    // margin-top: 40px;
 
     img {
         width: 150px;
+        margin-top: 50px;
     }
 
     .blank {
         width: 104px;
         color: white;
-        border-right: solid 9px blue;
+        border-right: solid 9px $navy;
     }
 
     .ribbon {
         text-align: center;
         background-color: $maroon;
         color: white;
-        width: 125px;
+        width: 150px;
         border-left: solid 4px white;
         padding: 6px;
+        p {
+            margin-top: 80px;
+        }
+        .UCP {
+            font-family: 'Almendra SC', serif;
+            font-size: 20px;
+        }
     }
 
     .home-page {
-        // text-indent: 3em;
-        // text-align: center;
         padding: 3em;
         width: fit-content;
+        h1 { 
+            color: $navy; 
+            text-align: center;
+            font-family: 'Kaushan Script', cursive;
+            font-family: 'Oleo Script', cursive;
+            font-size: 40px;
+            margin: -20px;
+        }
+        p {
+            text-indent: 3em;
+        }
+        h3 {
+            color: $maroon;
+            text-align: center;
+        }
+        .motto {
+            font-family: 'Marck Script', cursive;
+            font-size: 20px;
+            margin: -10px;
+        }
+        .para1 {
+            display: flex;
+            align-items: center;
+
+            h2 {
+                text-align: center;
+                padding: .75em;
+                color: $navy;
+            }
+        }
+
+        .para2 {
+            display: flex;
+            align-items: center;
+            .Guaranteed { color: $maroon; }
+            h3 {
+                text-align: center;
+                margin: 0px;
+                padding-left: 1em;
+                padding-right: 1em;
+                color: $navy;
+            }
+        }
+
+        .para3 {
+            display: flex;
+            align-items: center;
+            h4 {
+                text-align: center;
+                color: $navy;
+                width: 100px;
+                margin: 0px;
+                margin-left: 1em;
+            }
+            .pay { color: $maroon; }
+        }
     }
 }

@@ -71,7 +71,8 @@ export default class App extends Component {
                   top: "50%",
                   left: "50%",
                   transform: "translate(-50%, -50%)",
-                  width: "10em"
+                  width: "10em",
+                  color: "rgb(126, 10, 72)"
                 }}
               >Freedom Mailing Services</div>
             </div>

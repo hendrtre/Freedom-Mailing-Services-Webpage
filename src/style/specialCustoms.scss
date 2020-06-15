@@ -1,0 +1,46 @@
+.Special-content-page-wrapper {
+    display: flex;
+    .blank {
+        width: 104px;
+        color: white;
+        border-right: solid 9px $navy;
+    }
+    .ribbon {
+        text-align: center;
+        background-color: $maroon;
+        color: white;
+        width: 150px;
+        border-left: solid 4px white;
+        padding: 6px;
+        p {
+            margin-top: 80px;
+        }
+        .UCP {
+            font-family: 'Almendra SC', serif;
+            font-size: 20px;
+        }
+    }
+    .SC-page {
+        text-align: center;
+        padding: 3em;
+        width: fit-content;
+        .grids {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .box {
+            display: flex;
+            padding: 45px;
+            img {
+                width: 200px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .SC-page-sidebar {
+        img {
+            width: 150px;
+            margin-top: 50px;
+        }
+    }
+}

@@ -14,7 +14,7 @@
 	background: radial-gradient(
 		transparent 0px, 
 		transparent 4px, 
-		white 4px,
+		$offwhite 4px,
 		white
 	);
   
@@ -30,7 +30,7 @@
     justify-content: space-between;
     padding: 30px;
     background-color: $maroon;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
 
     .right-side {
         display: flex;
@@ -55,6 +55,7 @@
         text-transform: uppercase;
         font-size: 1rem;
         background-color: $maroon;
+        // background-color: rgb(162, 10, 72);
 
         .special {
             font-style: italic;
