@@ -1,10 +1,13 @@
 import React, { Component } from "react";
-
+import NavigationComponent from "../navigation/navigation-container"
 // TODO MAKE ICONS NEXT TO PHONE AND ADDRESS
 
 export default class Contact extends Component {
   render() {
     return (
+      <div>
+      <NavigationComponent />
+
       <div className="contact-page-wrapper">
         <div className="far-left-whitespace"></div>
         <div className="maroon-ribbon"></div>
@@ -46,6 +49,7 @@ export default class Contact extends Component {
             </form>
           </div>
         </div>
+      </div>
       </div>
     );
   }

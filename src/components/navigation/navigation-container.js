@@ -1,10 +1,18 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import FMSLogo from '../../../static/assets/main-imgs/FMS-logo-w-words-2.jpg'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const NavigationComponent = (props) => {
     return (
         <div>
+            <div className="nav-title-wrapper">
+                <div className="nav-img" />
+                <div className="nav-title">Freedom Mailing Services</div>
+            </div>
+
             <div 
                 className="logo-position"
                 style={{
@@ -53,6 +61,7 @@ const NavigationComponent = (props) => {
                         </NavLink>
                     </div>
                 </div>
+                <FontAwesomeIcon icon={faBars} className="Bars" />
             </div>
         </div>
     )

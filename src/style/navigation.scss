@@ -1,5 +1,31 @@
-// TODO figure a way to make the logo look like a postal stamp
-// figure a way to make the logo apear to on the navbar instead of in it.
+.nav-title-wrapper{
+    position: relative;
+    text-align: center;
+    color: #530000;
+    font-family: Dancing Script, cursive;
+    font-size: 80px;
+    font-weight: bold;
+
+    .nav-img {
+        display: flex;
+        justify-content: center;
+        background-image: url(../../static/assets/main-imgs/Bald-Eagle.jpg);
+        height: 140px;
+        background-position: 50% 30%;
+        background-size: cover;
+        opacity: 0.25;
+    }
+
+    .nav-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10em;
+        color: rgb(126, 10, 72);
+        transition: ease-in-out 0.5s;
+    }
+}
 
 .logo-position {
     
@@ -35,6 +61,8 @@
     .right-side {
         display: flex;
         align-items: center;
+        // padding: 10px;
+        // margin-bottom: 10px;
         // height: 55px;
     }
     
@@ -53,13 +81,13 @@
         transition: 0.5s ease-in-out;
         margin-right: 20px;
         text-transform: uppercase;
-        font-size: 1rem;
+        font-size: 1.25rem;
         background-color: $maroon;
         // background-color: rgb(162, 10, 72);
 
         .special {
             font-style: italic;
-            font-size: 20px;
+            font-size: 25px;
             font-weight: normal;
             // height: 25px;
         }
@@ -81,4 +109,28 @@
             
         }
     }
+
+
+    @media screen and (max-width: 1000px) {
+        .right-side{
+            display: none;
+        }
+        .Bars {
+            color: white;
+            font-size: 37px;
+        }
+    }
+    @media screen and (min-width: 1001px) {
+        .Bars { display: none; }
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .nav-title { font-size: 55px; transition: 0.5s; }
+}
+@media screen and (max-width: 625px) {
+    .nav-title { font-size: 45px; transition: 0.5s; }
+}
+@media screen and (max-width: 470px) {
+    .nav-title { font-size: 25px; transition: 0.5s; }
 }

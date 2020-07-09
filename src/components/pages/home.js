@@ -1,11 +1,15 @@
 import React, { Component } from "react";
-import axios from 'axios'
-import AP1995 from "../../../static/assets/home-imgs/AmericanFlagStamp1995.jpg"
+import NavigationComponent from "../navigation/navigation-container"
 import Footer from "../Footer/footer"
+import { faFeatherAlt, faScroll, faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default class Home extends Component {
   render() {
     return (
+      <div>
+      <NavigationComponent />
+
       <div className="home">
         <div className="home-content-page-wrapper">
           <div className="blank">
@@ -19,10 +23,8 @@ export default class Home extends Component {
               <p>We can print your custom forms and envelopes in-house!</p>
           </div>
           <div className="home-page">
-            <h1>Welcome, we are Freedom Mailing Services</h1>
-            <div className="motto">
-              <h3>"From Your Office To The Post Office!"</h3>
-            </div>
+            <h1>"From Your Office to the Post Office"</h1>
+
             <p>Over 32 years of services, ..... </p>
             <div className="para1">
               <p>
@@ -80,10 +82,17 @@ export default class Home extends Component {
             
           </div>
           <div className="home-page-images">
-            <img src={AP1995} alt="AP1995"/>
+              <FontAwesomeIcon icon={faFeatherAlt} className="feather" />
+            <div>
+              <FontAwesomeIcon icon={faScroll} className="scroll" />
+              <div>
+                <FontAwesomeIcon icon={faMailBulk} className="mailBulk" />
+              </div>
+            </div>
           </div>
         </div>
         <Footer />
+      </div>
       </div>
     );
   }

@@ -1,0 +1,66 @@
+.AD-Wrapper {
+    display: flex;
+    .icon {
+        color: $maroon;
+        font-size: 60px;
+        padding: 8px;
+        margin-right: 10px;
+        box-shadow: 3px 6px 3px $navy;
+    }
+    h1 { 
+        text-align: center; 
+        margin-bottom: 0px;
+    }
+    h3 { margin: 0px; }
+    .blank {
+        max-width: 80px;
+        min-width: 80px;
+        color: white;
+        border-right: solid 9px $navy;
+    }
+    .ribbon {
+        text-align: center;
+        background-color: $maroon;
+        color: white;
+        max-width: 110px;
+        min-width: 110px;
+        border-left: solid 4px white;
+        padding: 6px;
+        p {
+            margin-top: 80px;
+        }
+        .UCP {
+            font-family: 'Almendra SC', serif;
+            font-size: 20px;
+        }
+    }
+    .AD-page-columns {
+        // text-align: center;
+        padding: 2em;
+        width: fit-content;
+        .grids {
+            display: grid;
+            grid-gap: fit-content;
+            grid-template-columns: 1fr 1fr;
+        }
+        .box {
+            display: grid;
+            padding: 25px;
+            p { 
+                margin: 0px;
+                margin-top: 15px; 
+                
+            }
+            .title {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .AD-page-sidebar {
+        img {
+            width: 150px;
+            margin-top: 50px;
+        }
+    }
+}

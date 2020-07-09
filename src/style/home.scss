@@ -8,7 +8,8 @@
     }
 
     .blank {
-        width: 104px;
+        max-width: 80px;
+        min-width: 80px;
         color: white;
         border-right: solid 9px $navy;
     }
@@ -17,7 +18,9 @@
         text-align: center;
         background-color: $maroon;
         color: white;
-        width: 150px;
+        // width: 150px;
+        max-width: 110px;
+        min-width: 110px;
         border-left: solid 4px white;
         padding: 6px;
         p {
@@ -35,7 +38,6 @@
         h1 { 
             color: $navy; 
             text-align: center;
-            font-family: 'Kaushan Script', cursive;
             font-family: 'Oleo Script', cursive;
             font-size: 40px;
             margin: -20px;
@@ -87,6 +89,28 @@
                 margin-left: 1em;
             }
             .pay { color: $maroon; }
+        }
+    }
+    .home-page-images {
+        .feather {
+            color: grey;
+            font-size: 125px;
+            padding-top: 55px;
+            padding-right: 20px;
+        }
+        .scroll {
+            color: grey;
+            font-size: 100px;
+            padding-top: 145px;
+            padding-right: 20px;
+        }
+        .mailBulk {
+            color: grey;
+            font-size: 111px;
+            padding-top: 145px;
+            padding-right: 20px;
+            // text-align: end;
+            // justify-content: end;
         }
     }
 }

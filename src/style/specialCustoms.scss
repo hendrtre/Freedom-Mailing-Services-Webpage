@@ -1,7 +1,9 @@
 .Special-content-page-wrapper {
     display: flex;
     .blank {
-        width: 104px;
+        // width: 104px;
+        max-width: 80px;
+        min-width: 80px;
         color: white;
         border-right: solid 9px $navy;
     }
@@ -9,7 +11,8 @@
         text-align: center;
         background-color: $maroon;
         color: white;
-        width: 150px;
+        max-width: 110px;
+        min-width: 110px;
         border-left: solid 4px white;
         padding: 6px;
         p {
@@ -22,25 +25,140 @@
     }
     .SC-page {
         text-align: center;
-        padding: 3em;
-        width: fit-content;
+        padding-top: 1em;
+        padding-left: 2.5em;
+        padding-right: 5em;
+        padding-bottom: 3em;
+        // background: linear-gradient(to right, rgba(0, 0, 120, 0.65) 0% , rgba(126, 10, 72, 0.65) 80% );
+        background: linear-gradient(to right, rgba(0, 0, 120, 0.50) 0% , rgba(126, 10, 72, 0.50) 80% );
+        // background: linear-gradient(to right, rgba(0, 0, 120, 0.40) 0% , rgba(126, 10, 72, 0.40) 80% );
+        // background: linear-gradient(to right, rgba(0, 0, 120, 0.15) 0% , rgba(126, 10, 72, 0.15) 80% );
+        h1 { font-family: 'Kaushan Script', cursive; }
         .grids {
+            // width: fit-content;
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            // grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            // grid-template-columns: 1fr;
         }
         .box {
+            // width: fit-content;
             display: flex;
-            padding: 45px;
+            padding: 30px;
             img {
-                width: 200px;
-                padding-right: 10px;
+                width: 220px;
+                height: 285px;
+                // padding-right: 25px;
+                margin-right: 125px;
+                box-shadow: 5px 5px 5px rgb(41, 41, 41);
+                // background-repeat: no-repeat;
+
             }
-        }
-    }
-    .SC-page-sidebar {
-        img {
-            width: 150px;
-            margin-top: 50px;
+            .text-holder {
+                padding-top: 30px;
+                min-width: 150px;
+                // h3 { border-bottom: solid black 1px; }
+                h3 { box-shadow: 0 6px 6px -6px black; }
+                .learnMore {
+                    .leftArrow {
+                        font-size: 23px;
+                        padding-right: 5px;
+                        padding-left: 5px;
+                    }
+                    text-decoration: none;
+                    padding-right: 10px;
+                    font-size: 20px;
+                    color: $maroon;
+                    // border-bottom: solid $navy 2px;
+                    box-shadow: 0 4px 6px -6px $navy;
+                    &:hover {
+                        // transition: ease-in-out 0.3s;
+                        transition: 0.3s;
+                        color: rgb(197, 0, 0);
+                        background-color: rgba(255, 255, 255, 0.30);
+                        box-shadow: 0 5px 5px 1px $navy;
+                    }
+                }
+                plaintext {
+                    padding-right: 20px;
+                    font-size: 20px;
+                    color: $maroon;
+                    // border-bottom: solid $navy 2px;
+                    box-shadow: 0 4px 6px -6px $navy;
+
+                }
+            }
+            .sample-imgs {
+                display: flex;
+                &:hover {
+                    .BattleM {
+                        position: absolute;
+                        margin-left: 180px;
+                        transition: 1s;
+                    }
+                    .EagleMTN {
+                        position: absolute;
+                        margin-left: 360px;
+                        transition: 1s;
+                    }
+                    .Bonavista {
+                        position: absolute;
+                        margin-left: 180px;
+                        transition: 1s;
+                    }
+                    .Gorgoza {
+                        position: absolute;
+                        margin-left: 360px;
+                        transition: 1s;
+                    }
+                    .Yucaipa {
+                        position: absolute;
+                        margin-left: 180px;
+                        transition: 1s;
+                    }
+                    .DiscoveryBay {
+                        position: absolute;
+                        margin-left: 360px;
+                        transition: 1s;
+                    }
+                }
+            }
+            .BattleM {
+                position: absolute;
+                margin-left: 40px;
+                margin-top: 16px;
+                transition: ease-out 2s;
+            }
+            .EagleMTN {
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 32px;
+                transition: ease-out 2s;
+            }
+            .Bonavista {
+                position: absolute;
+                margin-left: 40px;
+                margin-top: 16px;
+                transition: ease-out 2s;
+            }
+            .Gorgoza {
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 32px;
+                transition: ease-out 2s;
+            }
+            .Yucaipa {
+                position: absolute;
+                margin-left: 40px;
+                margin-top: 16px;
+                transition: ease-out 2s;
+            }
+            .DiscoveryBay {
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 32px;
+                transition: ease-out 2s;
+            }
         }
     }
 }
