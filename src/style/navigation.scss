@@ -116,12 +116,76 @@
             display: none;
         }
         .Bars {
-            color: white;
+            // color: white;
             font-size: 37px;
+
+            
+            padding: 0;
+            // width: 50px;
+            border: 0;
+            // background-color: #fff;
+            // background-color: red;
+            // color: #333;
+            // color: $maroon;
+            cursor: pointer;
+            outline: 0;
+            // font-size: 40px;
+        }
+        .NavBars {
+            background-color: $maroon;
+            color: white;
+            border: none;
+        }
+        .dropdown {
+            position: absolute;
+            text-align: end;
+            text-transform: uppercase;
+            top: 244px;
+            color: white;
+            right: 0;
+            width: 300px;
+            z-index: 2;
+            border: 1px solid rgba(126, 10, 72, 0.05);
+            box-shadow: 0 16px 24px 2px rgba(126, 10, 72, 0.2);
+            background-color: rgba(126, 10, 72, 0.83);
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                padding: 8px 12px;
+                margin-right: 20px;
+                .featherDropIcon {
+                    display: none;
+                }
+            }
+            li:hover {
+                background-color: rgba(160, 79, 122, 0.9);
+                // background-color: rgba(126, 10, 72, 0.9);
+                // text-decoration: underline;
+                margin-right: 0;
+                cursor: pointer;
+                .featherDropIcon {
+                    display: inline;
+                }
+            }
+            a { 
+                text-decoration: none; 
+                color: white;
+            }
         }
     }
     @media screen and (min-width: 1001px) {
-        .Bars { display: none; }
+        .NavBars{
+            display: none; 
+            .Bars { 
+                font-size: 37px;
+            }
+        }
+        .dropdown {
+            display: none;
+        }
     }
 }
 

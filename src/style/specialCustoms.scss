@@ -1,7 +1,6 @@
 .Special-content-page-wrapper {
     display: flex;
     .blank {
-        // width: 104px;
         max-width: 80px;
         min-width: 80px;
         color: white;
@@ -29,10 +28,7 @@
         padding-left: 2.5em;
         padding-right: 5em;
         padding-bottom: 3em;
-        // background: linear-gradient(to right, rgba(0, 0, 120, 0.65) 0% , rgba(126, 10, 72, 0.65) 80% );
         background: linear-gradient(to right, rgba(0, 0, 120, 0.50) 0% , rgba(126, 10, 72, 0.50) 80% );
-        // background: linear-gradient(to right, rgba(0, 0, 120, 0.40) 0% , rgba(126, 10, 72, 0.40) 80% );
-        // background: linear-gradient(to right, rgba(0, 0, 120, 0.15) 0% , rgba(126, 10, 72, 0.15) 80% );
         h1 { font-family: 'Kaushan Script', cursive; }
         .grids {
             // width: fit-content;

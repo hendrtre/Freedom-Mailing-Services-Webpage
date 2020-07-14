@@ -11,7 +11,7 @@ import BattleM from "../../../static/assets/SC-imgs/Black_white samples/Battleme
 import Monticello from "../../../static/assets/SC-imgs/Black_white samples/Monticello-page-001.jpg"
 
 import Bonavista from "../../../static/assets/SC-imgs/2 color samples/Bonavista-001.jpg"
-import HeberLight from "../../../static/assets/SC-imgs/2 color samples/Heber-Light-page-001.jpg"
+import Ivins from "../../../static/assets/SC-imgs/2 color samples/Ivins-page-001.jpg"
 import Gorgoza from "../../../static/assets/SC-imgs/2 color samples/Gorgoza-page-001.jpg"
 
 import DiscoveryBay from "../../../static/assets/SC-imgs/full color samples/Discovery-bay-page-001.jpg"
@@ -28,7 +28,6 @@ export default class SpecializedCustomizations extends Component {
       <NavigationComponent />
 
       <div className="special-page">
-        {/* <Router> */}
         <div className="Special-content-page-wrapper">
           <div className="blank">
             <p>Welcome to Freedom Mailing Services!</p>
@@ -43,10 +42,6 @@ export default class SpecializedCustomizations extends Component {
               <p>We work with over 130 cities!</p>
           </div>
           <div className="SC-page">
-            {/* <Switch> */}
-            {/* <Route path="/blackWhiteTemp" component={BlackAndWhite} /> */}
-
-
             <h1>We customize to fit your needs. </h1>
             <p>
               Municipal, City, and Utility companies all deserve clear, clean, and defined statements that 
@@ -81,7 +76,7 @@ export default class SpecializedCustomizations extends Component {
                 <div className="box">
                   <NavLink to="/TwoColor">
                     <div className="sample-imgs">
-                      <img src={HeberLight} className="HeberLight" alt="HeberLight"/>
+                      <img src={Ivins} className="Ivins" alt="Ivins"/>
                       <img src={Bonavista} className="Bonavista" alt="Bonavista"/>
                       <img src={Gorgoza} className="Gorgoza" alt="Gorgoza"/>
                     </div>
@@ -133,11 +128,9 @@ export default class SpecializedCustomizations extends Component {
                 </div>
               </div>
             </div>
-            {/* </Switch> */}
           </div>
         </div>
         <Footer />
-        {/* </Router> */}
       </div>
       </div>
     );
