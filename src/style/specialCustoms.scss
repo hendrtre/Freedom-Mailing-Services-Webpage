@@ -117,6 +117,26 @@
                         margin-left: 360px;
                         transition: 1s;
                     }
+                    .Lehi {
+                        position: absolute;
+                        margin-left: 180px;
+                        transition: 1s;
+                    }
+                    .CMC {
+                        position: absolute;
+                        margin-left: 360px;
+                        transition: 1s;
+                    }
+                    .Pinedale {
+                        position: absolute;
+                        margin-left: 180px;
+                        transition: 1s;
+                    }
+                    .RiverH {
+                        position: absolute;
+                        margin-left: 360px;
+                        transition: 1s;
+                    }
                 }
             }
             .BattleM {
@@ -150,6 +170,38 @@
                 transition: ease-out 2s;
             }
             .DiscoveryBay {
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 32px;
+                transition: ease-out 2s;
+            }
+            .Lehi {
+                position: absolute;
+                margin-left: 40px;
+                margin-top: 16px;
+                transition: ease-out 2s;
+            }
+            .CMC {
+                position: absolute;
+                margin-left: 80px;
+                margin-top: 32px;
+                transition: ease-out 2s;
+            }
+            .Victor {
+                width: 220px;
+                height: 155px;
+            }
+            .Pinedale {
+                width: 220px;
+                height: 155px;
+                position: absolute;
+                margin-left: 40px;
+                margin-top: 16px;
+                transition: ease-out 2s;
+            }
+            .RiverH {
+                width: 220px;
+                height: 155px;
                 position: absolute;
                 margin-left: 80px;
                 margin-top: 32px;

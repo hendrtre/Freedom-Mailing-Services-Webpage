@@ -13,6 +13,8 @@ import NoMatch from "./pages/no-match";
 import BlackAndWhite from "./SCTempPages/B&W-page";
 import TwoColor from "./SCTempPages/2color"
 import FullColor from "./SCTempPages/FullColor"
+import UsageGraphs from "./SCTempPages/UsageGraphs"
+import PostCards from "./SCTempPages/PostCards"
 
 import theBaldEagle from "../../static/assets/main-imgs/Bald-Eagle.jpg"
 
@@ -39,6 +41,8 @@ export default class App extends Component {
               <Route path="/blackWhiteTemp" component={BlackAndWhite} />
               <Route path="/TwoColor" component={TwoColor} />
               <Route path="/FullColor" component={FullColor} />
+              <Route path="/UsageGraphs" component={UsageGraphs} />
+              <Route path="/PostCards" component={PostCards} />
 
               <Route component={NoMatch} />
             </Switch>

@@ -18,6 +18,14 @@ import DiscoveryBay from "../../../static/assets/SC-imgs/full color samples/Disc
 import Perry from "../../../static/assets/SC-imgs/full color samples/Perry-OK-page-001.jpg"
 import Yucaipa from "../../../static/assets/SC-imgs/full color samples/Yucaipa-page-001.jpg"
 
+import Blanding from "../../../static/assets/SC-imgs/Usage Graphs/3graph-Blanding-page-001.jpg"
+import Lehi from "../../../static/assets/SC-imgs/Usage Graphs/2graph-Lehi-page-001.jpg"
+import CMC from "../../../static/assets/SC-imgs/Usage Graphs/1graph-CMC-page-001.jpg"
+
+import Victor from "../../../static/assets/SC-imgs/PostCards/City-of-Victor_2.jpg"
+import Pinedale from "../../../static/assets/SC-imgs/PostCards/Pinedale-Gas_2.jpg"
+import RiverH from "../../../static/assets/SC-imgs/PostCards/River-Heights_2.jpg"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -50,6 +58,7 @@ export default class SpecializedCustomizations extends Component {
             <p>
               Below are examples of what we can provide ... "(?)"
             </p>
+            <p>Learn more by clicking on our samples!</p>
             <div className="SC-page-columns">
               <div className="grids">
                 <div className="box">
@@ -110,20 +119,38 @@ export default class SpecializedCustomizations extends Component {
                 </div>
 
                 <div className="box">
-                  <img src={LehiBill} alt="LehiBill"/>
+                  <NavLink to="/UsageGraphs">
+                    <div className="sample-imgs">
+                      <img src={Blanding} className="Blanding" alt="Blanding"/>
+                      <img src={Lehi} className="Lehi" alt="Lehi"/>
+                      <img src={CMC} className="CMC" alt="CMC"/>
+                    </div>
+                  </NavLink>
                   <div className="text-holder">
-                    <h3>Title Here</h3>
-                    <p>Test text to see if this works.</p>
-                    <plaintext> <FontAwesomeIcon icon={faArrowAltCircleLeft} className="leftArrow" /> Learn More</plaintext>
+                    <h3>Usage Graphs Templates.</h3>
+                    <p>Test text to see if this works. Usage Graphs samples.</p>
+                    <NavLink to="/UsageGraphs" className="learnMore" >
+                      <FontAwesomeIcon icon={faArrowAltCircleLeft} className="leftArrow" />
+                        LEARN MORE
+                    </NavLink>
                   </div>
                 </div>
                 
                 <div className="box">
-                  <img src={LehiBill} alt="LehiBill"/>
+                  <NavLink to="/PostCards">
+                    <div className="sample-imgs">
+                        <img src={Victor} className="Victor" alt="Victor"/>
+                        <img src={Pinedale} className="Pinedale" alt="Pinedale"/>
+                        <img src={RiverH} className="RiverH" alt="RiverH"/>
+                    </div>
+                  </NavLink>
                   <div className="text-holder">
-                    <h3>Title Here</h3>
-                    <p>Test text to see if this works.</p>
-                    <plaintext> <FontAwesomeIcon icon={faArrowAltCircleLeft} className="leftArrow" /> Learn More</plaintext>
+                    <h3>Post Cards.</h3>
+                    <p>Test text to see if this works. Post Cards Samples.</p>
+                    <NavLink to="/PostCards" className="learnMore" >
+                      <FontAwesomeIcon icon={faArrowAltCircleLeft} className="leftArrow" />
+                          LEARN MORE
+                    </NavLink>
                   </div>
                 </div>
               </div>
