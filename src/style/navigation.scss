@@ -27,14 +27,15 @@
     }
 }
 
-.logo-position {
-    
+.logo-position {    
 	width: 180px;
 	height: 140px;
 	display: inline-block;
 	padding: 10px;
 	background: white;
-	position: relative;
+    position: absolute;
+    left: 50px;
+    top: 111px;
 	filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
 	/*The stamp cutout will be created using crisp radial gradients*/
 	background: radial-gradient(
@@ -47,7 +48,12 @@
 	/*reducing the gradient size*/
 	background-size: 20px 20px;
 	/*Offset to move the holes to the edge*/
-	background-position: -10px -10px;
+    background-position: -10px -10px;
+    
+    img {
+        border: black;
+        border-style: double;
+    }
 }
 
 
@@ -56,14 +62,10 @@
     justify-content: space-between;
     padding: 30px;
     background-color: $maroon;
-    // margin-bottom: 40px;
 
     .right-side {
         display: flex;
         align-items: center;
-        // padding: 10px;
-        // margin-bottom: 10px;
-        // height: 55px;
     }
     
     .left-side {
@@ -75,20 +77,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        // font-weight: bold;
-        // height: 22px;
         border-bottom: 1px transparent;
         transition: 0.5s ease-in-out;
         margin-right: 20px;
         text-transform: uppercase;
         font-size: 1.25rem;
         background-color: $maroon;
-        // background-color: rgb(162, 10, 72);
 
         .special {
             font-style: italic;
-            font-size: 25px;
-            font-weight: normal;
+            // font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 2px;
             // height: 25px;
         }
 
@@ -109,16 +109,17 @@
             
         }
     }
-
-
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 780px) {
+        .nav-link-wrapper {
+            font-size: 1rem;
+        }
         .right-side{
             display: none;
         }
         .Bars {
             // color: white;
             font-size: 37px;
-
+    
             
             padding: 0;
             // width: 50px;
@@ -140,8 +141,8 @@
             position: absolute;
             text-align: end;
             text-transform: uppercase;
-            top: 244px;
             color: white;
+            top: 215px;
             right: 0;
             width: 300px;
             z-index: 2;
@@ -176,21 +177,47 @@
             }
         }
     }
-    @media screen and (min-width: 1001px) {
-        .NavBars{
-            display: none; 
-            .Bars { 
-                font-size: 37px;
-            }
+}
+
+@media screen and (min-width: 780px) {
+
+    .NavBars{
+        display: none; 
+        .Bars { 
+            font-size: 37px;
         }
-        .dropdown {
-            display: none;
-        }
+    }
+    .dropdown {
+        display: none;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .nav-title { font-size: 55px; transition: 0.5s; }
+// @media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
+    .nav-title { 
+        font-size: 55px; transition: 0.5s; 
+    }
+    .logo-position {
+        width: 140px;
+        height: 100px;
+        top: 114px;
+        img {
+            height: 95px;
+            width: 134px;
+        }
+    }
+    .Navigation-wrapper {
+        padding: 18px;
+        padding-right: 21px;
+    }
+    .nav-link-wrapper {
+        a { font-size: 1rem; }
+    }
+}
+@media screen and (max-width: 950px) {
+    .logo-position {
+        left: 20px;
+    }
 }
 @media screen and (max-width: 625px) {
     .nav-title { font-size: 45px; transition: 0.5s; }

@@ -13,16 +13,19 @@ import {
     faArrowAltCircleLeft,
     faFeatherAlt,
     faScroll,
-    faMailBulk
+    faMailBulk,     
+    faFlagUsa
 } from "@fortawesome/free-solid-svg-icons"
 
 import {
-    faFacebook
+    faFacebook,
+    faFacebookSquare
 } from "@fortawesome/free-brands-svg-icons"
 
 const Icons = () => {
     return library.add(
         faFacebook,
+        faFacebookSquare,
         faFileInvoiceDollar,
         faBook,
         faDraftingCompass,
@@ -35,7 +38,8 @@ const Icons = () => {
         faArrowAltCircleLeft,
         faFeatherAlt,
         faScroll,
-        faMailBulk
+        faMailBulk,
+        faFlagUsa,
     )
 }
 

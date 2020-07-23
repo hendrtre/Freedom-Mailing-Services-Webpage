@@ -20,7 +20,8 @@ export default class Home extends Component {
           <div className="ribbon">
               <p>We are partnered with:</p>
               <div className="UCP">Upper Case Printing, Ink.</div>
-              <p>We can print your custom forms and envelopes in-house!</p>
+              {/* <p>We can print your custom forms and envelopes in-house!</p> */}
+              <p>For Pricing Quotes, contact us at: (801)-373-2131</p>
           </div>
           <div className="home-page">
             <h1>"From Your Office to the Post Office"</h1>

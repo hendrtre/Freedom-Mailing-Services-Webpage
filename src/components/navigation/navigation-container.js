@@ -45,20 +45,16 @@ class NavigationComponent extends Component {
                 <div 
                     className="logo-position"
                     style={{
-                        position: "absolute",
-                        left: "50px",
-                        top: "113px"
+                        // position: "absolute",
+                        // left: "50px",
+                        // top: "113px"
                     }}
                 >
                     <img 
                         src={FMSLogo} 
                         alt="Dark logo" 
                         width="175" 
-                        height="136" 
-                        style={{
-                            border: "black",
-                            borderStyle: "double"
-                        }}
+                        height="136"                       
                     />
                 </div>
 

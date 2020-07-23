@@ -4,8 +4,6 @@ import { NavLink } from 'react-router-dom'
 import NavigationComponent from "../navigation/navigation-container"
 import Footer from "../Footer/footer"
 
-import LehiBill from "../../../static/assets/SC-imgs/LehiBills1up1.jpg"
-
 import EGMT from "../../../static/assets/SC-imgs/Black_white samples/Eagle-mtn-page-001.jpg"
 import BattleM from "../../../static/assets/SC-imgs/Black_white samples/Battlement-Mesa-page-001.jpg"
 import Monticello from "../../../static/assets/SC-imgs/Black_white samples/Monticello-page-001.jpg"

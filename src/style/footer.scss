@@ -1,20 +1,64 @@
-.footer-container {
+.footer-wrapper {
     background-color: $navy;
-    height: 130px;
+    text-align: center;
+    color: white;
+    height: 150px;
+    padding-top: 1.25em;
     h1 {
         margin: 0px;
-        color: white;
-        text-align: center;
     }
     h2 {
+        transition: 0.5s;
         margin: 0px;
-        color: white;
-        text-align: center;
+    }
+    h3 {
+        transition: 0.5s;
+        margin: 0px;
+        padding-bottom: 0.5em;
     }
     p {
-        padding-top: 10px;
+        // padding-top: 10px;
         margin: 0px;
-        color: white;
-        text-align: center;
+    }
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 1fr;
+        // grid-template-columns: 2fr 1fr 1fr 2fr;
+        padding-top: 1em;
+        .usaFlag {
+            transition: 0.5s;
+            font-size: 3em;
+        }
+        .facebookIcon {
+            color: white;
+            font-size: 2em;
+            padding-top: 4px;
+            &:hover {
+                // background-color: $maroon;
+                padding: 3px;
+                border: solid 1px white;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 809px) {
+        h2 { 
+            transition: 0.5s;
+            font-size: 20px; 
+        }
+        h3 {
+            transition: 0.5s;
+            font-size: 18px;
+        }
+        .usaFlag {
+            transition: 0.5s;
+            height: 35px;
+        }
     }
 }
+
+
+// @media screen and (max-width: 625px) {
+//     .usaFlag { font-size: 145px; transition: 0.5s; }
+// }
