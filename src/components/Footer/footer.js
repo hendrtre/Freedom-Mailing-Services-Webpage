@@ -21,8 +21,10 @@ export default class Footer extends Component {
                         {/* <h1>For priceing quotes, call us at: (801)-373-2131.</h1> */}
                         {/* <h2>For priceing quotes, call us at: (801)-373-2131.</h2> */}
                         {/* <h3>For priceing quotes, call us at: (801)-373-2131.</h3> */}
-                        <h3>For priceing quotes, call us at: </h3>
+                        <h4>For priceing quotes, call us at: </h4>
                         <h3>(801)-373-2131</h3>
+                        <h4>(?) - Or Email at: - (?)</h4>
+                        <h3>(?) - Freedom - (?)</h3>
                     </div>
                     <div className="rightSide">
                         {/* <p>Connect with us!</p> */}

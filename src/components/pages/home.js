@@ -21,11 +21,10 @@ export default class Home extends Component {
               <p>We are partnered with:</p>
               <div className="UCP">Upper Case Printing, Ink.</div>
               {/* <p>We can print your custom forms and envelopes in-house!</p> */}
-              <p>For Pricing Quotes, contact us at: (801)-373-2131</p>
+              <p>For Pricing Quotes, contact us at: (801)-373-2131</p> 
           </div>
           <div className="home-page">
             <h1>"From Your Office to the Post Office"</h1>
-
             <p>Over 32 years of services, ..... </p>
             <div className="para1">
               <p>
@@ -43,7 +42,10 @@ export default class Home extends Component {
               </p>
               <h2>We Specialize In Customization</h2>            
             </div>
-            <div className="para2">
+
+
+
+            <div className="para2Normal">
               <h3>24 Hour Turn Around. <div className="Guaranteed">Guaranteed!</div></h3>
               <p>
                 The services we provide include: computer sorting, laser printing, folding, 
@@ -53,6 +55,18 @@ export default class Home extends Component {
                 graph on each account, this can also be done at a minimal additional fee.
               </p>
             </div>
+            <div className="para2Resized">
+              <p>
+                The services we provide include: computer sorting, laser printing, folding, 
+                inserting, post office prep, post office delivery, and postage payment. All of our
+                services are guaranteed in a 24 hour turn around. (Starting from the time the file
+                is verified and permission is given to print). If you would like a 13 month usage
+                graph on each account, this can also be done at a minimal additional fee.
+              </p>
+              <h3>24 Hour Turn Around. <div className="Guaranteed">Guaranteed!</div></h3>
+            </div>
+
+
             <div className="para3">
               <p>
                 The software that is used to sort and optimize postage discounts is approved
@@ -61,7 +75,7 @@ export default class Home extends Component {
                 Full Service Barcode, carrier routes and optional endorsement line. This information
                 will decrease your postage for full page bills and postcards.
               </p>
-              <div>
+              <div className="payFee">
                 <h4>Your postage savings</h4>
                 <h4 className="pay">PAYS OUR FEES!</h4>
               </div>

@@ -1,6 +1,5 @@
 .home-content-page-wrapper {
     display: flex;
-    // margin-top: 40px;
 
     img {
         width: 150px;
@@ -18,10 +17,6 @@
         text-align: center;
         background-color: $maroon;
         color: white;
-        // width: 150px;
-        max-width: 110px;
-        min-width: 110px;
-        border-left: solid 4px white;
         padding: 6px;
         p {
             margin-top: 80px;
@@ -35,14 +30,14 @@
     .home-page {
         padding: 3em;
         width: fit-content;
-        font-size: 18px;
-        h1 { 
-            color: $navy; 
-            text-align: center;
-            font-family: 'Oleo Script', cursive;
-            font-size: 45px;
-            margin: -20px;
-        }
+        font-size: 18px; 
+        // h1 { 
+        //     color: $navy; 
+        //     text-align: center;
+        //     font-family: 'Oleo Script', cursive;
+        //     font-size: 45px;
+        //     margin: -20px;
+        // }
         p {
             text-indent: 3em;
         }
@@ -56,7 +51,7 @@
             margin: -10px;
         }
         .para1 {
-            display: flex;
+            // display: flex;
             align-items: center;
 
             h2 {
@@ -66,8 +61,169 @@
             }
         }
 
-        .para2 {
-            display: flex;
+        // .para2Normal {
+        //     display: flex;
+        //     align-items: center;
+        //     .Guaranteed { color: $maroon; }
+        //     h3 {
+        //         text-align: center;
+        //         margin: 0px;
+        //         padding-left: 1em;
+        //         padding-right: 1em;
+        //         color: $navy;
+        //     }
+        // }
+
+        .para3 {
+            // display: flex;
+                // text-align: center;
+                // justify-content: center;
+            .payFee {
+                // display: flex;
+                // justify-content: center;
+                // padding: 1.5rem;
+            }
+            h4 {
+                color: $navy;
+                margin: 0px;
+            }
+            .pay { color: $maroon; }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .feather {
+        // height: 70px;
+        color: grey;
+        font-size: 80px;
+        padding-top: 150px;
+        padding-right: 5px;
+        transition: 0.5s;
+    }
+    .scroll {
+        height: 70px;
+        color: grey;
+        font-size: 64px;
+        padding-top: 215px;
+        padding-right: 5px;
+        transition: 0.5s;
+    }
+    .mailBulk {
+        color: grey;
+        transition: 0.5s;
+        font-size: 75px;
+        padding-top: 265px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .blank { 
+        display: none; 
+    }
+    .ribbon { 
+        border-right: solid 4px white; 
+        border-left: solid 4px white;
+        max-width: 92px;
+        min-width: 92px;
+    }
+    .home-page {
+        border-left: solid 9px $navy;
+    }
+}
+
+@media screen and (min-width: 1121px) {
+    .ribbon {
+        border-left: solid 4px white;
+        max-width: 110px;
+        min-width: 110px;
+    }        
+    .feather {
+        color: grey;
+        font-size: 125px;
+        padding-top: 55px;
+        padding-right: 20px;
+        transition: 0.5s;
+    }
+    .scroll {
+        color: grey;
+        font-size: 100px;
+        padding-top: 145px;
+        padding-right: 20px;
+        transition: 0.5s;
+    }
+    .mailBulk {
+        color: grey;
+        font-size: 111px;
+        padding-top: 145px;
+        padding-right: 20px;
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .home-page-images { display: none; }
+}
+
+
+
+
+
+@media screen and (min-width: 890px) {
+    .para1 { display: flex; }
+    // .para2 { display: flex; }
+    .para3 { display: flex; }
+}
+@media screen and (min-width: 890px) {
+    .home-page {
+        h1 { 
+            color: $navy; 
+            text-align: center;
+            font-family: 'Oleo Script', cursive;
+            font-size: 45px;
+            margin: -20px;
+        }
+    }
+    // h4 { 
+    //     width: 100px; 
+    //     // padding: 1.5rem;
+    // }
+    .payFee { 
+        padding: 1.5rem; 
+        text-align: center;
+        h4 { 
+            width: 100px; 
+            // padding: 1.5rem;
+        }
+    }
+    .para2Normal {
+        display: flex;
+        align-items: center;
+        .Guaranteed { color: $maroon; }
+        h3 {
+            // text-align: center;
+            margin: 0px;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: $navy;
+        }
+    }
+    .para2Resized { display: none; }
+}
+@media screen and (max-width: 889px) {
+    h1 { 
+        color: $navy; 
+        text-align: center;
+        font-family: 'Oleo Script', cursive;
+        font-size: 35px;
+        margin: -20px;
+    }
+        .para2Normal {
+            display: none;
+        }
+        .para2Resized {
+            // display: flex;
             align-items: center;
             .Guaranteed { color: $maroon; }
             h3 {
@@ -78,40 +234,4 @@
                 color: $navy;
             }
         }
-
-        .para3 {
-            display: flex;
-            align-items: center;
-            h4 {
-                text-align: center;
-                color: $navy;
-                width: 100px;
-                margin: 0px;
-                margin-left: 1em;
-            }
-            .pay { color: $maroon; }
-        }
-    }
-    .home-page-images {
-        .feather {
-            color: grey;
-            font-size: 125px;
-            padding-top: 55px;
-            padding-right: 20px;
-        }
-        .scroll {
-            color: grey;
-            font-size: 100px;
-            padding-top: 145px;
-            padding-right: 20px;
-        }
-        .mailBulk {
-            color: grey;
-            font-size: 111px;
-            padding-top: 145px;
-            padding-right: 20px;
-            // text-align: end;
-            // justify-content: end;
-        }
-    }
 }
