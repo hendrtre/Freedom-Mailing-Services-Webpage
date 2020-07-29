@@ -1,18 +1,15 @@
 .home-content-page-wrapper {
     display: flex;
-
     img {
         width: 150px;
         margin-top: 50px;
     }
-
     .blank {
         max-width: 80px;
         min-width: 80px;
         color: white;
         border-right: solid 9px $navy;
     }
-
     .ribbon {
         text-align: center;
         background-color: $maroon;
@@ -26,20 +23,14 @@
             font-size: 20px;
         }
     }
-
     .home-page {
-        padding: 3em;
-        width: fit-content;
+        // padding: 3em;
+        // width: fit-content;
         font-size: 18px; 
-        // h1 { 
-        //     color: $navy; 
-        //     text-align: center;
-        //     font-family: 'Oleo Script', cursive;
-        //     font-size: 45px;
-        //     margin: -20px;
-        // }
         p {
             text-indent: 3em;
+            text-align: justify;
+            text-justify: inter-word;
         }
         h3 {
             color: $maroon;
@@ -51,9 +42,7 @@
             margin: -10px;
         }
         .para1 {
-            // display: flex;
             align-items: center;
-
             h2 {
                 text-align: center;
                 padding: .75em;
@@ -118,27 +107,34 @@
     }
 }
 
-@media screen and (max-width: 1120px) {
-    .blank { 
-        display: none; 
-    }
-    .ribbon { 
-        border-right: solid 4px white; 
-        border-left: solid 4px white;
-        max-width: 92px;
-        min-width: 92px;
-    }
-    .home-page {
-        border-left: solid 9px $navy;
+@media screen and (max-width: 950px) {
+// @media screen and (max-width: 1120px) {
+    .home-content-page-wrapper {
+        .blank { 
+            display: none; 
+        }
+        .ribbon { 
+            border-right: solid 4px white; 
+            border-left: solid 4px white;
+            max-width: 92px;
+            min-width: 92px;
+        }
+        .home-page {
+            border-left: solid 9px $navy;
+        }
+
     }
 }
-
-@media screen and (min-width: 1121px) {
+@media screen and (min-width: 950px) {
     .ribbon {
         border-left: solid 4px white;
         max-width: 110px;
         min-width: 110px;
     }        
+
+}
+
+@media screen and (min-width: 1121px) {
     .feather {
         color: grey;
         font-size: 125px;
@@ -169,13 +165,13 @@
 
 
 
-
 @media screen and (min-width: 890px) {
     .para1 { display: flex; }
     // .para2 { display: flex; }
     .para3 { display: flex; }
 }
 @media screen and (min-width: 890px) {
+    // p {color: yellow;}
     .home-page {
         h1 { 
             color: $navy; 
@@ -212,26 +208,49 @@
     .para2Resized { display: none; }
 }
 @media screen and (max-width: 889px) {
-    h1 { 
-        color: $navy; 
-        text-align: center;
-        font-family: 'Oleo Script', cursive;
-        font-size: 35px;
-        margin: -20px;
+    // p {color: red;}
+    .home-page {
+        h1 { 
+            color: $navy; 
+            text-align: center;
+            font-family: 'Oleo Script', cursive;
+            font-size: 35px;
+            margin: 0px;
+        }
     }
-        .para2Normal {
-            display: none;
+    .para1 {
+        h2 { margin: 0px; }
+    }
+    .para2Normal {
+        display: none;
+    }
+    .para2Resized {
+        // display: flex;
+        align-items: center;
+        .Guaranteed { color: $maroon; }
+        h3 {
+            text-align: center;
+            // margin: 0px;
+            padding-left: 1em;
+            padding-right: 1em;
+            color: $navy;
         }
-        .para2Resized {
-            // display: flex;
-            align-items: center;
-            .Guaranteed { color: $maroon; }
-            h3 {
-                text-align: center;
-                margin: 0px;
-                padding-left: 1em;
-                padding-right: 1em;
-                color: $navy;
-            }
-        }
+    }
+    .payFee {
+        text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .home-page {
+        padding: 3em;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 780px) {
+    .home-page {
+        padding: 1em;
+    }
 }

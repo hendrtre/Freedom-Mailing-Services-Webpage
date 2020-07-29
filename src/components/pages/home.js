@@ -76,7 +76,7 @@ export default class Home extends Component {
                 will decrease your postage for full page bills and postcards.
               </p>
               <div className="payFee">
-                <h4>Your postage savings</h4>
+                <h4>Your Postage Savings</h4>
                 <h4 className="pay">PAYS OUR FEES!</h4>
               </div>
             </div>

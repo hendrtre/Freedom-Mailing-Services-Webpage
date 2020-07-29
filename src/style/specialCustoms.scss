@@ -24,19 +24,19 @@
     }
     .SC-page {
         text-align: center;
-        padding-top: 1em;
-        padding-left: 2.5em;
-        padding-right: 5em;
-        padding-bottom: 3em;
+        // padding-top: 1em;
+        // padding-left: 2.5em;
+        // padding-right: 5em;
+        // padding-bottom: 3em;
         background: linear-gradient(to right, rgba(0, 0, 120, 0.50) 0% , rgba(126, 10, 72, 0.50) 80% );
         h1 { font-family: 'Kaushan Script', cursive; }
-        .grids {
-            // width: fit-content;
-            display: grid;
-            // grid-template-columns: 1fr 1fr 1fr;
-            grid-template-columns: 1fr 1fr;
-            // grid-template-columns: 1fr;
-        }
+        // .grids {
+        //     // width: fit-content;
+        //     display: grid;
+        //     // grid-template-columns: 1fr 1fr 1fr;
+        //     grid-template-columns: 1fr 1fr;
+        //     // grid-template-columns: 1fr;
+        // }
         .box {
             // width: fit-content;
             display: flex;
@@ -74,14 +74,6 @@
                         background-color: rgba(255, 255, 255, 0.30);
                         box-shadow: 0 5px 5px 1px $navy;
                     }
-                }
-                plaintext {
-                    padding-right: 20px;
-                    font-size: 20px;
-                    color: $maroon;
-                    // border-bottom: solid $navy 2px;
-                    box-shadow: 0 4px 6px -6px $navy;
-
                 }
             }
             .sample-imgs {
@@ -207,6 +199,55 @@
                 margin-top: 32px;
                 transition: ease-out 2s;
             }
+        }
+    }
+} 
+
+@media screen and (max-width: 950px) {
+    // @media screen and (max-width: 1120px) {
+        .Special-content-page-wrapper {
+            .blank { 
+                display: none; 
+            }
+            .ribbon { 
+                // border-right: solid 4px white; 
+                border-left: solid 4px white;
+                max-width: 92px;
+                min-width: 92px;
+            }
+            .home-page {
+                border-left: solid 9px $navy;
+            }
+    
+        }
+    }
+@media screen and (min-width: 950px) {
+    .ribbon {
+        border-left: solid 4px white;
+        max-width: 110px;
+        min-width: 110px;
+    }       
+}
+
+@media screen and (min-width: 1472px) {
+    .Special-content-page-wrapper {
+        .SC-page {
+            padding-left: 2.5em;
+            padding-right: 5em;
+            padding-bottom: 3em;
+        }
+        .grids {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+@media screen and (max-width: 1471px) {
+    .Special-content-page-wrapper {
+        .SC-page {
+            padding-left: 2.5em;
+            padding-right: 3em;
+            padding-bottom: 3em;
         }
     }
 }
