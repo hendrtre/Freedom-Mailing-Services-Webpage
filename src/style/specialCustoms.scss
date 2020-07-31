@@ -24,6 +24,7 @@
     }
     .SC-page {
         text-align: center;
+        // padding: 0px;
         // padding-top: 1em;
         // padding-left: 2.5em;
         // padding-right: 5em;
@@ -39,16 +40,12 @@
         // }
         .box {
             // width: fit-content;
-            display: flex;
+            // display: flex;
             padding: 30px;
             img {
-                width: 220px;
-                height: 285px;
-                // padding-right: 25px;
-                margin-right: 125px;
+                // width: 220px;
+                // height: 285px;
                 box-shadow: 5px 5px 5px rgb(41, 41, 41);
-                // background-repeat: no-repeat;
-
             }
             .text-holder {
                 padding-top: 30px;
@@ -76,6 +73,7 @@
                     }
                 }
             }
+
             .sample-imgs {
                 display: flex;
                 &:hover {
@@ -200,6 +198,13 @@
                 transition: ease-out 2s;
             }
         }
+        .hiddenTitle {
+            h3 { 
+                box-shadow: 0 6px 6px -6px black; 
+                margin-top: 2.5em;
+                margin-bottom: 0;
+            }
+        }
     }
 } 
 
@@ -242,12 +247,51 @@
         }
     }
 }
-@media screen and (max-width: 1471px) {
+// @media screen and (min-width: 1471px) {
+//     .Special-content-page-wrapper {
+//         .SC-page {
+//             padding-left: 2.5em;
+//             padding-right: 3em;
+//             padding-bottom: 3em;
+//         }
+//     }
+// }
+
+@media screen and (max-width: 780px) {
     .Special-content-page-wrapper {
-        .SC-page {
-            padding-left: 2.5em;
-            padding-right: 3em;
-            padding-bottom: 3em;
+        .ribbon { display: none; }
+    }
+}
+@media screen and (max-width: 1470px) {
+    .SC-page {
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 2em;
+    }
+}
+
+@media screen and (min-width: 625px) {
+    .box {
+        display: flex;
+        // .text-holder {
+        //     h3 { display: none; }
+        // }
+        img { 
+            margin-right: 125px;                
+            width: 220px;
+            height: 285px;
+        }
+    }
+    .hiddenTitle { display: none; }
+}
+@media screen and (max-width: 625px) {
+    .text-holder {
+        h3 { display: none; }
+    }
+    .box {
+        img {
+            width: 170px;
+            height: 235px;
         }
     }
 }

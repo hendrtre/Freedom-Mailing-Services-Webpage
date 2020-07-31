@@ -64,3 +64,22 @@
         }
     }
 }
+
+@media screen and (max-width: 1220px) {
+    .AD-page-sidebar { display: none; }
+}
+
+@media screen and (max-width: 950px) {
+    .AD-Wrapper {
+        .blank { 
+            display: none; 
+        }
+        .ribbon { 
+            border-right: solid 4px white; 
+            border-left: solid 4px white;
+            max-width: 92px;
+            min-width: 92px;
+        }
+        .AD-page { border-left: solid 9px $navy; }
+    }
+}

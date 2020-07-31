@@ -59,6 +59,10 @@ export default class SpecializedCustomizations extends Component {
             <p>Learn more by clicking on our samples!</p>
             <div className="SC-page-columns">
               <div className="grids">
+
+                <div className="hiddenTitle">
+                  <h3>Black & White Templates</h3>
+                </div>
                 <div className="box">
                   <NavLink to="/blackWhiteTemp">
                     <div className="sample-imgs">
@@ -80,6 +84,9 @@ export default class SpecializedCustomizations extends Component {
                   </div>
                 </div>
 
+                <div className="hiddenTitle">
+                  <h3>Two Color Templates</h3>
+                </div>
                 <div className="box">
                   <NavLink to="/TwoColor">
                     <div className="sample-imgs">
@@ -98,6 +105,9 @@ export default class SpecializedCustomizations extends Component {
                   </div>
                 </div>
 
+                <div className="hiddenTitle">
+                  <h3>Full Color Templates</h3>
+                </div>
                 <div className="box">
                   <NavLink to="/FullColor">
                     <div className="sample-imgs">
@@ -116,6 +126,9 @@ export default class SpecializedCustomizations extends Component {
                   </div>
                 </div>
 
+                <div className="hiddenTitle">
+                  <h3>Usage Graphs Templates</h3>
+                </div>
                 <div className="box">
                   <NavLink to="/UsageGraphs">
                     <div className="sample-imgs">
@@ -134,6 +147,9 @@ export default class SpecializedCustomizations extends Component {
                   </div>
                 </div>
                 
+                <div className="hiddenTitle">
+                  <h3>Post Cards</h3>
+                </div>
                 <div className="box">
                   <NavLink to="/PostCards">
                     <div className="sample-imgs">
