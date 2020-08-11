@@ -22,6 +22,17 @@
             font-family: 'Almendra SC', serif;
             font-size: 20px;
         }
+        .facebookIcon {
+            color: white;
+            font-size: 2.5em;
+            padding-top: 4px;
+            &:hover {
+                // background-color: $maroon;
+                padding: 3px;
+                border: solid 1px white;
+                border-radius: 5px;
+            }
+        }
     }
     .home-page {
         // padding: 3em;
@@ -49,29 +60,7 @@
                 color: $navy;
             }
         }
-
-        // .para2Normal {
-        //     display: flex;
-        //     align-items: center;
-        //     .Guaranteed { color: $maroon; }
-        //     h3 {
-        //         text-align: center;
-        //         margin: 0px;
-        //         padding-left: 1em;
-        //         padding-right: 1em;
-        //         color: $navy;
-        //     }
-        // }
-
         .para3 {
-            // display: flex;
-                // text-align: center;
-                // justify-content: center;
-            .payFee {
-                // display: flex;
-                // justify-content: center;
-                // padding: 1.5rem;
-            }
             h4 {
                 color: $navy;
                 margin: 0px;
@@ -83,7 +72,6 @@
 
 @media screen and (max-width: 1120px) {
     .feather {
-        // height: 70px;
         color: grey;
         font-size: 80px;
         padding-top: 150px;
@@ -122,16 +110,14 @@
         .home-page {
             border-left: solid 9px $navy;
         }
-
     }
 }
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 951px) {
     .ribbon {
         border-left: solid 4px white;
         max-width: 110px;
         min-width: 110px;
     }        
-
 }
 
 @media screen and (min-width: 1121px) {
@@ -167,7 +153,6 @@
 
 @media screen and (min-width: 890px) {
     .para1 { display: flex; }
-    // .para2 { display: flex; }
     .para3 { display: flex; }
 }
 @media screen and (min-width: 890px) {
@@ -181,16 +166,11 @@
             margin: -20px;
         }
     }
-    // h4 { 
-    //     width: 100px; 
-    //     // padding: 1.5rem;
-    // }
     .payFee { 
         padding: 1.5rem; 
         text-align: center;
         h4 { 
             width: 100px; 
-            // padding: 1.5rem;
         }
     }
     .para2Normal {
@@ -198,7 +178,6 @@
         align-items: center;
         .Guaranteed { color: $maroon; }
         h3 {
-            // text-align: center;
             margin: 0px;
             padding-left: 1em;
             padding-right: 1em;
@@ -225,12 +204,10 @@
         display: none;
     }
     .para2Resized {
-        // display: flex;
         align-items: center;
         .Guaranteed { color: $maroon; }
         h3 {
             text-align: center;
-            // margin: 0px;
             padding-left: 1em;
             padding-right: 1em;
             color: $navy;
@@ -252,5 +229,41 @@
 @media screen and (max-width: 780px) {
     .home-page {
         padding: 1em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home-content-page-wrapper {
+        .ribbon { 
+            border-radius: 60px 60px 0px 0px; 
+            border-left: solid 2px white;
+            border-right: solid 2px white;
+            // border-right: solid 2px $navy;
+            // box-shadow: blue 5px 5px 5px 5px;
+            box-shadow: 12px 10px 5px -5px $navy;
+        }
+        .home-page { 
+            h1 { display: none; }
+            border-left: none;
+            // border-left: solid 4px $navy;
+            // border-top-left-radius: 100px 120px;
+        }
+    }
+    .hiddenTitle {
+        h1 {  
+            color: $navy; 
+            text-align: center;
+            font-family: 'Oleo Script', cursive;
+            font-size: 35px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+    }
+}
+@media screen and (min-width: 701px) {
+    .home {
+        .hiddenTitle {
+            h1 { display: none; }
+        }
     }
 }

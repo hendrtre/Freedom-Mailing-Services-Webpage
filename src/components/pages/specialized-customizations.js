@@ -46,6 +46,7 @@ export default class SpecializedCustomizations extends Component {
               <p>We can print your custom forms and envelopes in-house!</p>
               <p>For a Priceing Quote, call us at: (801)-373-2131</p>
               <p>We work with over 130 cities!</p>
+              <p>We do a lot more in our Additional Services tab</p>
           </div>
           <div className="SC-page">
             <h1>We customize to fit your needs. </h1>

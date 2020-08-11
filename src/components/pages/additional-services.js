@@ -24,7 +24,6 @@ export default class AdditionalServices extends Component {
           <div className="ribbon">
             <p>We are partnered with:</p>
             <div className="UCP">Upper Case Printing, Ink.</div>
-            <p>We can print your custom forms and envelopes in-house!</p>
           </div>
           <div className="AD-page">
             <h1>((Catchy line for Additional Services))</h1>
@@ -47,8 +46,10 @@ export default class AdditionalServices extends Component {
                     <h2>Developmental</h2>
                   </div>
                   <p>
-                    Here is some text. Just to see if this text will make things look good. 
-                    Try to use an indent in these paragraphs.
+                    Here is some text. Just to see if this text will make things look good. Here
+                    is a thought, try to use an indent in these paragraphs. Probably would look a lot 
+                    better. I wonder if I drag this paragraph 
+                    out a little more it will look somewhat good on the main page. ... Not bad at all.
                   </p>
                 </div>
 

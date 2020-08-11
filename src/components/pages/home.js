@@ -3,6 +3,7 @@ import NavigationComponent from "../navigation/navigation-container"
 import Footer from "../Footer/footer"
 import { faFeatherAlt, faScroll, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 
 export default class Home extends Component {
   render() {
@@ -11,6 +12,9 @@ export default class Home extends Component {
       <NavigationComponent />
 
       <div className="home">
+        <div className="hiddenTitle">
+            <h1>"From Your Office to the Post Office"</h1>
+        </div>
         <div className="home-content-page-wrapper">
           <div className="blank">
             <p>Welcome to Freedom Mailing Services!</p>
@@ -22,6 +26,15 @@ export default class Home extends Component {
               <div className="UCP">Upper Case Printing, Ink.</div>
               {/* <p>We can print your custom forms and envelopes in-house!</p> */}
               <p>For Pricing Quotes, contact us at: (801)-373-2131</p> 
+              <p>
+                Connect with us on Facebook
+                <div className="ribbonFacebook">
+                  <a href="https://www.facebook.com/freedomanduppercase/" target="_blank">
+                              <FontAwesomeIcon icon={faFacebookSquare} className="facebookIcon" />
+                              {/* <FontAwesomeIcon icon={faFacebook} className="facebookIcon" /> */}
+                  </a>
+                </div>
+              </p>
           </div>
           <div className="home-page">
             <h1>"From Your Office to the Post Office"</h1>

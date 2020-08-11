@@ -282,7 +282,9 @@
             height: 285px;
         }
     }
-    .hiddenTitle { display: none; }
+    .SC-page {
+        .hiddenTitle { display: none; }
+    }
 }
 @media screen and (max-width: 625px) {
     .text-holder {
