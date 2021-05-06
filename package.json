@@ -68,7 +68,7 @@
     "postcss-loader": "^2.1.6",
     "react": "16.8.0",
     "react-dom": "16.8.0",
-    "react-draft-wysiwyg": "^1.14.4",
+    "react-draft-wysiwyg": "^1.14.6",
     "react-modal": "^3.11.2",
     "react-redux": "5.0.6",
     "react-router": "^4.2.0",
